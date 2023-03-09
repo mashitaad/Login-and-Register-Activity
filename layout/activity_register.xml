@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:backgroundTint="@color/Background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rg_image1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_image1"
+        android:text="Welcome on Board"
+        android:layout_marginTop="-30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="18sp"
+        android:textColor="@color/Black"
+        android:id="@+id/rg_text1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_text1"
+        android:text="Let's help meet up your tasks"
+        android:layout_marginTop="11dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="12sp"
+        android:textColor="@color/Black"
+        android:id="@+id/rg_text2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/rg_text2"
+        android:padding="30dp"
+        android:id="@+id/layout_1"
+        >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_shape"
+                android:hint="Enter Your Full Name"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:backgroundTint="@color/White"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/Black"
+                android:id="@+id/b_text1"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/b_text1"
+                android:background="@drawable/button_shape"
+                android:hint="Enter Your Email"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:backgroundTint="@color/White"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/Black"
+                android:id="@+id/b_text2"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/b_text2"
+                android:background="@drawable/button_shape"
+                android:hint="Create Password"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:backgroundTint="@color/White"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/Black"
+                android:id="@+id/b_text3"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_below="@id/b_text3"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_shape"
+                android:hint="Confirm Password"
+                android:paddingLeft="10dp"
+                android:backgroundTint="@color/White"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/Black"
+                android:id="@+id/b_text4"
+                />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_1"
+        android:width="284dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/White"
+        android:id="@+id/b_register"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_2"
+        android:layout_below="@id/b_register"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/primaryColor"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="3dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
